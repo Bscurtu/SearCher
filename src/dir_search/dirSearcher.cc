@@ -8,7 +8,7 @@ void dirSearch(SearchQuery &userInput)
 
     for (; searcher != end; ++searcher)
     {
-        if (searcher.depth() >= userInput.maxDepth)
+        if (userInput.maxDepth != -1 && searcher.depth() >= userInput.maxDepth)
             searcher.disable_recursion_pending();
         if (!searcher->is_directory())
             checkCoincidence(*searcher, userInput);

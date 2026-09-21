@@ -4,7 +4,7 @@ class SearchQuery
     public:
     std::filesystem::path rootDir;
     std::string query;
-    size_t maxDepth;
+    int maxDepth {-1};
     bool    caseSensitive {true};
 
     SearchQuery(){};
