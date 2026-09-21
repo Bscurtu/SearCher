@@ -33,4 +33,4 @@ fclean:
 	rm -f $(OBJS)
 	rm -f $(TARGET)
 
-.PHONY: all clean run
+.PHONY: all clean fclean run
