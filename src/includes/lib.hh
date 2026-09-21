@@ -7,6 +7,7 @@
 #include <vector>
 #include <cstdint>
 #include <cstring>
+#include <array>
 #include "searchQuery.hh"
 
 int main(int argc, char **argv);
